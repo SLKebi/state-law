@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLK Team - Tuyên bố</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            border-radius: 3px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+
+        .content {
+            text-align: justify;
+            margin-bottom: 40px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-size: 1.1em;
+            line-height: 1.8;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s ease forwards;
+        }
+
+        .content p:nth-child(1) { animation-delay: 0.1s; }
+        .content p:nth-child(2) { animation-delay: 0.2s; }
+        .content p:nth-child(3) { animation-delay: 0.3s; }
+        .content p:nth-child(4) { animation-delay: 0.4s; }
+
+        .signature {
+            text-align: right;
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            font-size: 1.2em;
+            font-weight: 500;
+            opacity: 0;
+            animation: fadeIn 0.5s ease 0.5s forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .content p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SLK - Team</h1>
+        <div class="content">
+            <h2>Tuyên bố không liên quan</h2>
+            <p>Trong trường hợp nhóm SLK - Team bị điều tra bởi các cơ quan trực thuộc Bộ Công an hoặc các tổ chức chính trị tương tự phục vụ cho Nhà nước Cộng hòa Xã hội Chủ nghĩa Việt Nam, tôi xin khẳng định rõ ràng rằng: tôi không có bất kỳ mối liên hệ nào với nhóm này hoặc với bất kỳ cá nhân nào trong nhóm.</p>
+            <p>Tôi không rõ vì lý do gì mà tài khoản của mình lại có mặt trong nhóm tại thời điểm hiện tại. Có khả năng tài khoản của tôi đã bị thêm vào bởi một bên thứ ba mà không có sự đồng ý hoặc nhận thức của tôi.</p>
+            <p>Tôi cũng xin nhấn mạnh rằng: tôi hoàn toàn không tham gia, không hỗ trợ, và không tiếp tay cho bất kỳ hành động nào có tính chất chống phá Đảng, Nhà nước, hay đi ngược lại với lợi ích của nhân dân Việt Nam.</p>
+            <p>Tôi cam kết hợp tác đầy đủ với các cơ quan chức năng nếu được yêu cầu làm rõ sự việc.</p>
+        </div>
+        <div class="signature">
+            SLK Team
+        </div>
+    </div>
+</body>
+</html> 
